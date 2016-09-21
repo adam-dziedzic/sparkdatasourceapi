@@ -14,7 +14,7 @@ object app {
     val df = spark
               .read
               .format("edu.uchicago.cs.data")
-              .load("/home/adam/data/sparkDataSourceAPI")   
+              .load("data/sparkDataSourceAPI")   
               
     df.printSchema()
     df.show()
