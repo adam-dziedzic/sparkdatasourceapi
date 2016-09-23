@@ -25,7 +25,7 @@ class LegacyRelation(location: String, userSchema: StructType)(@transient val sq
   }
   
   private def castValue(value: String, toType: DataType) = toType match {
-    case _: StringType  => value
+    case _: StringType  => value // case variable of any name but of StringType
     case _: IntegerType => value.toInt
   }
   
